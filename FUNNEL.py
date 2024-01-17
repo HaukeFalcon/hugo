@@ -5,7 +5,7 @@ import pip
 
 pip.main(["install","openpyxl"])
 
-st.title("CREDITOS ATORADOS EN PROCESO")
-df=pd.read_excel('PROCESOS_PIVOTE.xlsx')
-
+st.title("JAJA CREDITOS ATORADOS EN PROCESO")
+#df=pd.read_excel('PROCESOS_PIVOTE.xlsx')
+f=pd.read_csv('PROCESOS_PIVOTE.csv')
 st.write(df)
