@@ -1,5 +1,12 @@
 import streamlit as st
-import pnadas as pd
+import pandas as pd
+import pip 
 
+
+pip.main(["install","openpyxl"])
 
 st.title("CREDITOS ATORADOS EN PROCESO")
+
+df=pd.read_excel('PROCESOS_PIVOTE')
+
+st.write(df)
