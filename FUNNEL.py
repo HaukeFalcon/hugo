@@ -19,8 +19,15 @@ st.write(df)
 #st.markdown(f'*Resultados Disponibles:{numero_resultados}*') 
 
 
-st.markdown(f'Estos socios si terminaron el proceso jajaja:') 
+st.markdown(f':wink: Estos socios si terminaron el proceso jajaja:') 
 
 
 df2=pd.read_csv('APROBADOS.csv',encoding='latin-1')
 st.write(df2)
+
+
+st.markdown(f':neutral_face: Estos socios fueron rechazados:') 
+
+
+df3=pd.read_csv('RECHAZADOS.csv',encoding='latin-1')
+st.write(df3)
