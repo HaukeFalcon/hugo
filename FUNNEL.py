@@ -11,7 +11,7 @@ st.title("FUNNEL ACTIVACASH 2.0 :sunglasses:")
 #df_2=pd.read_csv('APROBADOS.csv')
 #st.write(df_2)
 
-st.markdown(f':cry:Estos socios estan caidos en el proceso:') 
+st.markdown(f':cry: Estos socios estan caidos en el proceso:') 
 
 df=pd.read_csv('PROCESOS_PIVOTE.csv')
 st.write(df)
