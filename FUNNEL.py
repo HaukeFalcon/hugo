@@ -7,8 +7,7 @@ import pip
 #pip.main(["install","matplotlib"])
 #pip.main(["install","numpy"])
 #pip.main(["install","plotly_express"])
-!pip install matplotlib
-
+pip.main(['install', 'matplotlib'])
 
 #import plotly.express as px
 
