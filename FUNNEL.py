@@ -3,7 +3,7 @@ import pandas as pd
 import pip 
 
 
-pip.main(["install","openpyxl"])
+pip.main(["install","matplotlib"])
 
 st.title("FUNNEL ACTIVACASH 2.0 :sunglasses:")
 #df=pd.read_excel('PROCESOS_PIVOTE.xlsx')
@@ -32,7 +32,7 @@ st.markdown(f':neutral_face: Estos socios fueron rechazados:')
 df3=pd.read_csv('RECHAZADOS.csv',encoding='latin-1')
 st.write(df3)
 
-pip install matplotlib
+
 
 
 import streamlit as st
