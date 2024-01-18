@@ -31,3 +31,24 @@ st.markdown(f':neutral_face: Estos socios fueron rechazados:')
 
 df3=pd.read_csv('RECHAZADOS.csv',encoding='latin-1')
 st.write(df3)
+
+
+import streamlit as st
+import matplotlib.pyplot as plt
+import numpy as np
+
+arr = np.random.normal(1, 1, size=100)
+fig, ax = plt.subplots()
+ax.hist(arr, bins=20)
+
+st.pyplot(fig)
+
+
+
+
+import plotly.express as px
+data = dict(
+    number=[39, 27.4, 20.6, 11, 2],
+    stage=["Website visit", "Downloads", "Potential customers", "Requested price", "invoice sent"])
+fig = px.funnel(data, x='number', y='stage')
+fig.show()
