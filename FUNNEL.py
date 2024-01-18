@@ -10,7 +10,7 @@ pip.main(["install","plotly_express"])
 
 #import plotly.express as px
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import numpy as np
 
 st.title("FUNNEL ACTIVACASH 2.0 :sunglasses:")
