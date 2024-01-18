@@ -32,6 +32,8 @@ st.markdown(f':neutral_face: Estos socios fueron rechazados:')
 df3=pd.read_csv('RECHAZADOS.csv',encoding='latin-1')
 st.write(df3)
 
+pip install matplotlib
+
 
 import streamlit as st
 import matplotlib.pyplot as plt
