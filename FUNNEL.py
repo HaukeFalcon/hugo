@@ -10,6 +10,7 @@ import pip
 pip.main(['install', 'matplotlib'])
 pip.main(['install', 'plotly'])
 pip.main(['install', 'plotly_express==0.4.0'])
+pip.main(['install', 'plotly.figure_factory'])
 
 
 #import plotly.express as px
