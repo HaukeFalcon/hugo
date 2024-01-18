@@ -9,6 +9,7 @@ import pip
 #pip.main(["install","plotly_express"])
 pip.main(['install', 'matplotlib'])
 pip.main(['install', 'plotly'])
+pip.main(['install', 'plotly_express==0.4.0'])
 
 
 #import plotly.express as px
