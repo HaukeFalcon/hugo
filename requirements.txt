@@ -5,3 +5,4 @@ matplotlib
 numpy
 matplotlib.pyplot
 plotly.express
+plotly
