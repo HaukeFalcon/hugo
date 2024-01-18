@@ -4,13 +4,13 @@ import streamlit as st
 import pandas as pd
 
 import pip 
-pip.main(["install","matplotlib"])
-pip.main(["install","numpy"])
-pip.main(["install","plotly_express"])
+#pip.main(["install","matplotlib"])
+#pip.main(["install","numpy"])
+#pip.main(["install","plotly_express"])
 
 #import plotly.express as px
 
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import numpy as np
 
 st.title("FUNNEL ACTIVACASH 2.0 :sunglasses:")
@@ -54,19 +54,9 @@ st.bar_chart(chart_data)
 
 
 
-
-#arr = np.random.normal(1, 1, size=100)
-#fig, ax = plt.subplots()
-#ax.hist(arr, bins=20)
-
-#st.pyplot(fig)
-
-
-
-
-#import plotly.express as px
-#data = dict(
-#    number=[39, 27.4, 20.6, 11, 2],
-#    stage=["Website visit", "Downloads", "Potential customers", "Requested price", "invoice sent"])
-#fig = px.funnel(data, x='number', y='stage')
-#fig.show()
+import plotly.express as px
+data = dict(
+    number=[39, 27.4, 20.6, 11, 2],
+    stage=["Website visit", "Downloads", "Potential customers", "Requested price", "invoice sent"])
+fig = px.funnel(data, x='number', y='stage')
+fig.show()
