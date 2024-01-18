@@ -8,7 +8,7 @@ pip.main(["install","matplotlib"])
 pip.main(["install","numpy"])
 pip.main(["install","plotly_express"])
 
-import plotly.express as px
+#import plotly.express as px
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -43,19 +43,30 @@ st.write(df3)
 
 
 
+import streamlit as st
+import pandas as pd
+import numpy as np
 
-arr = np.random.normal(1, 1, size=100)
-fig, ax = plt.subplots()
-ax.hist(arr, bins=20)
+chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
 
-st.pyplot(fig)
+st.bar_chart(chart_data)
+
+
+
+
+
+#arr = np.random.normal(1, 1, size=100)
+#fig, ax = plt.subplots()
+#ax.hist(arr, bins=20)
+
+#st.pyplot(fig)
 
 
 
 
 #import plotly.express as px
-data = dict(
-    number=[39, 27.4, 20.6, 11, 2],
-    stage=["Website visit", "Downloads", "Potential customers", "Requested price", "invoice sent"])
-fig = px.funnel(data, x='number', y='stage')
-fig.show()
+#data = dict(
+#    number=[39, 27.4, 20.6, 11, 2],
+#    stage=["Website visit", "Downloads", "Potential customers", "Requested price", "invoice sent"])
+#fig = px.funnel(data, x='number', y='stage')
+#fig.show()
