@@ -6,7 +6,7 @@ import pandas as pd
 import pip 
 pip.main(["install","matplotlib"])
 pip.main(["install","numpy"])
-pip.main(["install","plotly"])
+pip.main(["install","plotly_express"])
 
 import plotly.express as px
 
