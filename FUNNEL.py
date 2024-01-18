@@ -58,9 +58,23 @@ st.bar_chart(chart_data)
 
 
 
-import plotly.express as px
-data = dict(
-    number=[39, 27.4, 20.6, 11, 2],
-    stage=["Website visit", "Downloads", "Potential customers", "Requested price", "invoice sent"])
-fig = px.funnel(data, x='number', y='stage')
-fig.show()
+import streamlit as st
+import numpy as np
+import plotly.figure_factory as ff
+
+# Add histogram data
+x1 = np.random.randn(200) - 2
+x2 = np.random.randn(200)
+x3 = np.random.randn(200) + 2
+
+# Group data together
+hist_data = [x1, x2, x3]
+
+group_labels = ['Group 1', 'Group 2', 'Group 3']
+
+# Create distplot with custom bin_size
+fig = ff.create_distplot(
+        hist_data, group_labels, bin_size=[.1, .25, .5])
+
+# Plot!
+st.plotly_chart(fig, use_container_width=True)
