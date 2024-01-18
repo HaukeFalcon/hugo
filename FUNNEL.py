@@ -1,9 +1,17 @@
+
+
 import streamlit as st
 import pandas as pd
+
 import pip 
-
-
 pip.main(["install","matplotlib"])
+pip.main(["install","numpy"])
+pip.main(["install","plotly"])
+
+import plotly.express as px
+
+import matplotlib.pyplot as plt
+import numpy as np
 
 st.title("FUNNEL ACTIVACASH 2.0 :sunglasses:")
 #df=pd.read_excel('PROCESOS_PIVOTE.xlsx')
@@ -35,9 +43,6 @@ st.write(df3)
 
 
 
-import streamlit as st
-import matplotlib.pyplot as plt
-import numpy as np
 
 arr = np.random.normal(1, 1, size=100)
 fig, ax = plt.subplots()
@@ -48,7 +53,7 @@ st.pyplot(fig)
 
 
 
-import plotly.express as px
+#import plotly.express as px
 data = dict(
     number=[39, 27.4, 20.6, 11, 2],
     stage=["Website visit", "Downloads", "Potential customers", "Requested price", "invoice sent"])
